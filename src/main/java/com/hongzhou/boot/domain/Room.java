@@ -1,9 +1,26 @@
 package com.hongzhou.boot.domain;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Room")
 public class Room {
+	@Id
+	@Column(name="Room_ID")
+	@GeneratedValue
 	private long id;
+	
+	@Column(name="Name")
 	private String name;
+	
+	@Column(name="Room_Number")
 	private String number;
+	
+	@Column(name="Bed_Info")
 	private String info;
 	
 	public Room() {}

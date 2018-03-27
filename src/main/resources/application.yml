@@ -18,3 +18,8 @@ spring:
   profiles: test
 server:
   port: 9000
+---
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none
